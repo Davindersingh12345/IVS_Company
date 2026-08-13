@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | IVS – In Vein Studio LLC</title>
+
+    <meta name="description"
+        content="Learn about IVS – In Vein Studio LLC, our founder, company journey, mission and values.">
+
+    <style>
+
+        /* ================================
+           GLOBAL
+        ================================= */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            background: #fff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .eyebrow {
+            color: #0d2b52;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+
+        /* ================================
+           HEADER
+        ================================= */
+
+        .site-header {
+            width: 100%;
+            background: #071c35;
+            color: white;
+            padding: 18px 6%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: white;
+        }
+
+        .brand-mark {
+            background: white;
+            color: #071c35;
+            font-size: 22px;
+            font-weight: 900;
+            padding: 8px 12px;
+            letter-spacing: 1px;
+        }
+
+        .brand-sub {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+
+        .nav a {
+            color: white;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: .5px;
+            transition: .3s;
+        }
+
+        .nav a:hover,
+        .nav a.active {
+            color: #9fc3e5;
+        }
+
+        .nav-quote {
+            background: white;
+            color: #071c35 !important;
+            padding: 12px 18px;
+        }
+
+        .header-phone {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+        }
+
+        .header-phone strong {
+            display: block;
+        }
+
+        .header-phone small {
+            display: block;
+            font-size: 9px;
+            color: #b8d0eb;
+            letter-spacing: 1px;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+
+        /* ================================
+           HERO
+        ================================= */
+
+        .about-hero {
+            min-height: 440px;
+            padding: 100px 8%;
+            display: flex;
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(7, 28, 53, .98),
+                    rgba(13, 43, 82, .92),
+                    rgba(23, 59, 98, .85)
+                );
+
+            color: white;
+        }
+
+        .about-hero > div {
+            max-width: 850px;
+        }
+
+        .about-hero .eyebrow {
+            color: #b8d0eb;
+        }
+
+        .about-hero h1 {
+            font-size: 64px;
+            line-height: .95;
+            margin: 15px 0 25px;
+            font-weight: 900;
+            letter-spacing: -1px;
+        }
+
+        .about-hero p:last-child {
+            max-width: 720px;
+            color: #dce6f0;
+            font-size: 15px;
+            line-height: 1.9;
+        }
+
+
+        /* ================================
+           FOUNDER SECTION
+        ================================= */
+
+        .section-wide {
+            max-width: 1400px;
+            margin: auto;
+            padding: 90px 7%;
+        }
+
+        .founder {
+            display: grid;
+            grid-template-columns: 420px 1fr;
+            align-items: center;
+            gap: 80px;
+        }
+
+        .founder-photo {
+            background: #e8edf2;
+            padding: 12px;
+            box-shadow: 15px 15px 0 #dce3ea;
+        }
+
+        .founder-photo img {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+        }
+
+        .founder-content h2 {
+            color: #071c35;
+            font-size: 56px;
+            line-height: 1;
+            margin-bottom: 5px;
+            font-weight: 900;
+        }
+
+        .role {
+            color: #0d2b52;
+            font-size: 15px;
+            font-weight: 800;
+            margin-bottom: 25px;
+        }
+
+        .founder-content > p:not(.eyebrow):not(.role) {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.9;
+            margin-bottom: 18px;
+        }
+
+        blockquote {
+            margin-top: 30px;
+            padding: 15px 20px;
+            border-left: 4px solid #0d2b52;
+            color: #0d2b52;
+            font-weight: 700;
+            font-style: italic;
+            background: #f5f6f7;
+        }
+
+
+        /* ================================
+           COMPANY JOURNEY
+        ================================= */
+
+        .journey {
+            max-width: none;
+            background: #f4f6f8;
+        }
+
+        .center-title {
+            max-width: 800px;
+            text-align: center;
+            margin: 0 auto 55px;
+        }
+
+        .center-title h2 {
+            color: #071c35;
+            font-size: 56px;
+            line-height: 1;
+            margin-bottom: 15px;
+            font-weight: 900;
+        }
+
+        .center-title > p:last-child {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .timeline {
+            max-width: 900px;
+            margin: auto;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 34px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #cbd3dc;
+        }
+
+        .timeline article {
+            position: relative;
+            display: grid;
+            grid-template-columns: 70px 1fr;
+            gap: 35px;
+            margin-bottom: 45px;
+        }
+
+        .timeline article > span {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: #0d2b52;
+            color: white;
+
+            font-weight: 900;
+            font-size: 14px;
+
+            position: relative;
+            z-index: 2;
+        }
+
+        .timeline article div {
+            background: white;
+            padding: 25px 30px;
+            border: 1px solid #dce2e8;
+        }
+
+        .timeline h3 {
+            color: #071c35;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .timeline p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+
+        /* ================================
+           MISSION / VISION / VALUES
+        ================================= */
+
+        .values {
+            padding: 90px 7%;
+            background: white;
+        }
+
+        .value-grid {
+            max-width: 1100px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .value-grid article {
+            padding: 35px;
+            min-height: 260px;
+
+            border: 1px solid #dce2e8;
+            background: white;
+
+            transition: .3s;
+        }
+
+        .value-grid article:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, .08);
+        }
+
+        .value-grid span {
+            color: #0d2b52;
+            font-size: 13px;
+            font-weight: 900;
+        }
+
+        .value-grid h3 {
+            color: #071c35;
+            font-size: 20px;
+            margin: 25px 0 12px;
+        }
+
+        .value-grid p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+
+        /* ================================
+           CALL TO ACTION
+        ================================= */
+
+        .cta {
+            background: #0d2b52;
+            color: white;
+
+            padding: 60px 8%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .cta .eyebrow {
+            color: #b8d0eb;
+        }
+
+        .cta h2 {
+            font-size: 46px;
+            line-height: 1;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-weight: 800;
+            font-size: 12px;
+        }
+
+        .btn.primary {
+            background: white;
+            color: #0d2b52;
+        }
+
+        .btn.primary:hover {
+            background: #dce8f3;
+        }
+
+
+        /* ================================
+           FOOTER
+        ================================= */
+
+        .footer {
+            background: #071c35;
+            color: white;
+
+            padding: 70px 7% 25px;
+
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr 1fr;
+            gap: 50px;
+        }
+
+        .footer-brand .brand-mark {
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .footer-brand p {
+            color: #b8c6d5;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        .footer h3 {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .footer a {
+            display: block;
+            color: #b8c6d5;
+            font-size: 13px;
+            margin-bottom: 10px;
+            transition: .3s;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+        .footer p {
+            color: #b8c6d5;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        .copyright {
+            grid-column: 1 / -1;
+
+            border-top: 1px solid rgba(255,255,255,.15);
+
+            padding-top: 20px;
+            margin-top: 20px;
+
+            text-align: center;
+
+            color: #8fa1b4;
+            font-size: 11px;
+        }
+
+
+        /* ================================
+           RESPONSIVE
+        ================================= */
+
+        @media(max-width:1100px) {
+
+            .nav {
+                gap: 14px;
+            }
+
+            .header-phone {
+                display: none;
+            }
+
+            .founder {
+                grid-template-columns: 350px 1fr;
+                gap: 50px;
+            }
+
+        }
+
+
+        @media(max-width:800px) {
+
+            .site-header {
+                padding: 15px 5%;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 18px;
+
+                padding-top: 20px;
+            }
+
+            .nav.open {
+                display: flex;
+            }
+
+            .about-hero {
+                padding: 75px 6%;
+                min-height: 360px;
+            }
+
+            .about-hero h1 {
+                font-size: 46px;
+            }
+
+            .founder {
+                grid-template-columns: 1fr;
+                gap: 50px;
+                padding: 65px 6%;
+            }
+
+            .founder-photo img {
+                height: 450px;
+            }
+
+            .founder-content h2 {
+                font-size: 46px;
+            }
+
+            .journey {
+                padding: 65px 6%;
+            }
+
+            .center-title h2 {
+                font-size: 46px;
+            }
+
+            .value-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .values {
+                padding: 65px 6%;
+            }
+
+            .cta {
+                padding: 50px 6%;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .cta h2 {
+                font-size: 38px;
+            }
+
+            .footer {
+                grid-template-columns: 1fr 1fr;
+                padding: 55px 6% 25px;
+            }
+
+        }
+
+
+        @media(max-width:550px) {
+
+            .brand-sub {
+                display: none;
+            }
+
+            .about-hero h1 {
+                font-size: 38px;
+            }
+
+            .about-hero p:last-child {
+                font-size: 14px;
+            }
+
+            .founder-photo img {
+                height: 380px;
+            }
+
+            .founder-content h2 {
+                font-size: 40px;
+            }
+
+            .center-title h2 {
+                font-size: 40px;
+            }
+
+            .timeline article {
+                grid-template-columns: 55px 1fr;
+                gap: 20px;
+            }
+
+            .timeline article > span {
+                width: 55px;
+                height: 55px;
+                font-size: 12px;
+            }
+
+            .timeline::before {
+                left: 26px;
+            }
+
+            .timeline article div {
+                padding: 20px;
+            }
+
+            .footer {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- ================================
+         HEADER
+    ================================= -->
+
+    <header class="site-header">
+
+        <a class="brand" href="index.html">
+
+            <span class="brand-mark">
+                IVS
+            </span>
+
+            <span class="brand-sub">
+                IN VEIN STUDIO LLC
+            </span>
+
+        </a>
+
+
+        <button class="menu-toggle" aria-label="Open navigation">
+            ☰
+        </button>
+
+
+        <nav class="nav">
+
+            <a href="index.html">
+                HOME
+            </a>
+
+            <a href="about.html" class="active">
+                ABOUT US
+            </a>
+
+            <a href="index.html#services">
+                SERVICES
+            </a>
+
+            <a href="index.html#fleet">
+                OUR FLEET
+            </a>
+
+            <a href="index.html#contact">
+                CONTACT
+            </a>
+
+            <a href="index.html#quote" class="nav-quote">
+                GET A QUOTE →
+            </a>
+
+        </nav>
+
+
+        <div class="header-phone">
+
+            <span style="font-size:20px;">
+                ☎
+            </span>
+
+            <div>
+
+                <strong>
+                    +1 (123) 456-7890
+                </strong>
+
+                <small>
+                    24/7 DISPATCH SUPPORT
+                </small>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================================
+         HERO
+    ================================= -->
+
+    <section class="about-hero">
+
+        <div>
+
+            <p class="eyebrow">
+                ABOUT IVS – IN VEIN STUDIO LLC
+            </p>
+
+            <h1>
+                BUILT ON HARD WORK.
+                <br>
+                DRIVEN BY PURPOSE.
+            </h1>
+
+            <p>
+                Discover the people, values and journey behind IVS
+                and our commitment to dependable transportation
+                across the United States.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================
+         FOUNDER
+    ================================= -->
+
+    <section class="founder section-wide">
+
+        <div class="founder-photo">
+
+            <img
+                src="owner-placeholder.jpg"
+                alt="Founder placeholder photo"
+            >
+
+        </div>
+
+
+        <div class="founder-content">
+
+            <p class="eyebrow">
+                MEET OUR FOUNDER
+            </p>
+
+            <h2>
+                John Anderson
+            </h2>
+
+            <p class="role">
+                Founder &amp; Chief Executive Officer
+            </p>
+
+            <p>
+                John started his career with a simple belief:
+                transportation should be built around reliability,
+                communication and trust. After years of experience
+                in transportation and logistics, he founded IVS to
+                create a company where customers know their freight
+                is handled with care from pickup to delivery.
+            </p>
+
+            <p>
+                His leadership continues to focus on building a
+                dependable team, maintaining a modern fleet and
+                creating long-term relationships with customers
+                and transportation partners.
+            </p>
+
+            <blockquote>
+                “Every shipment represents a promise.
+                Our job is to keep that promise.”
+            </blockquote>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================
+         COMPANY JOURNEY
+    ================================= -->
+
+    <section class="journey section-wide">
+
+        <div class="center-title">
+
+            <p class="eyebrow">
+                OUR STORY
+            </p>
+
+            <h2>
+                THE IVS JOURNEY
+            </h2>
+
+            <p>
+                Placeholder timeline — replace the dates and
+                text with the real company history.
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <article>
+
+                <span>
+                    2022
+                </span>
+
+                <div>
+
+                    <h3>
+                        THE BEGINNING
+                    </h3>
+
+                    <p>
+                        IVS was established with a vision to
+                        provide safe, dependable and
+                        customer-focused freight transportation.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article>
+
+                <span>
+                    2023
+                </span>
+
+                <div>
+
+                    <h3>
+                        BUILDING THE TEAM
+                    </h3>
+
+                    <p>
+                        The company expanded its driver and
+                        operations team while developing strong
+                        customer relationships.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article>
+
+                <span>
+                    2024
+                </span>
+
+                <div>
+
+                    <h3>
+                        FLEET EXPANSION
+                    </h3>
+
+                    <p>
+                        IVS invested in additional equipment
+                        and expanded its transportation
+                        capabilities.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article>
+
+                <span>
+                    2025
+                </span>
+
+                <div>
+
+                    <h3>
+                        GROWING NATIONWIDE
+                    </h3>
+
+                    <p>
+                        Operations and service coverage
+                        continued to grow across the
+                        United States.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article>
+
+                <span>
+                    2026
+                </span>
+
+                <div>
+
+                    <h3>
+                        THE ROAD AHEAD
+                    </h3>
+
+                    <p>
+                        IVS continues to pursue safer operations,
+                        better technology and stronger partnerships.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================
+         MISSION / VISION / VALUES
+    ================================= -->
+
+    <section class="values">
+
+        <div class="center-title">
+
+            <p class="eyebrow">
+                WHAT DRIVES US
+            </p>
+
+            <h2>
+                OUR MISSION &amp; VISION
+            </h2>
+
+        </div>
+
+
+        <div class="value-grid">
+
+
+            <article>
+
+                <span>
+                    01
+                </span>
+
+                <h3>
+                    OUR MISSION
+                </h3>
+
+                <p>
+                    To provide safe, reliable and on-time
+                    transportation while delivering
+                    exceptional service to every customer.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <span>
+                    02
+                </span>
+
+                <h3>
+                    OUR VISION
+                </h3>
+
+                <p>
+                    To become a trusted nationwide
+                    transportation and logistics partner
+                    known for integrity, performance
+                    and innovation.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <span>
+                    03
+                </span>
+
+                <h3>
+                    OUR VALUES
+                </h3>
+
+                <p>
+                    Safety, accountability, communication,
+                    professionalism and a commitment to
+                    doing the job right.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================
+         CTA
+    ================================= -->
+
+    <section class="cta">
+
+        <div>
+
+            <p class="eyebrow">
+                LET'S MOVE FORWARD
+            </p>
+
+            <h2>
+                READY TO MOVE YOUR FREIGHT?
+            </h2>
+
+        </div>
+
+
+        <a
+            class="btn primary"
+            href="index.html#quote"
+        >
+            GET A QUOTE →
+        </a>
+
+    </section>
+
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer class="footer">
+
+
+        <div class="footer-brand">
+
+            <div class="brand-mark">
+                IVS
+            </div>
+
+            <p>
+                Delivering Excellence.
+                <br>
+                Driving Your Success.
+                <br>
+                Nationwide.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                QUICK LINKS
+            </h3>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="index.html#fleet">
+                Our Fleet
+            </a>
+
+            <a href="index.html#services">
+                Services
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                OUR SERVICES
+            </h3>
+
+            <a href="index.html#services">
+                Dry Van Freight
+            </a>
+
+            <a href="index.html#services">
+                Reefer Loads
+            </a>
+
+            <a href="index.html#services">
+                Flatbed Transportation
+            </a>
+
+            <a href="index.html#services">
+                Expedited Freight
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                CONTACT
+            </h3>
+
+            <p>
+                +1 (123) 456-7890
+            </p>
+
+            <p>
+                dispatch@inveinstudio.com
+            </p>
+
+            <p>
+                123 Logistics Way
+                <br>
+                Atlanta, GA 30301
+            </p>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2025 IN VEIN STUDIO LLC (IVS).
+            All Rights Reserved.
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- ================================
+         JAVASCRIPT
+    ================================= -->
+
+    <script>
+
+        const menuButton =
+            document.querySelector(".menu-toggle");
+
+        const navigation =
+            document.querySelector(".nav");
+
+
+        menuButton.addEventListener("click", function () {
+
+            navigation.classList.toggle("open");
+
+        });
+
+
+        // Close mobile menu after clicking a link
+
+        document.querySelectorAll(".nav a").forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                navigation.classList.remove("open");
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+</html>
